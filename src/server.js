@@ -9,6 +9,7 @@ import {
 } from "./errorsHandlers.js";
 import mediasRouter from "./api/medias/index.js";
 import filesRouter from "./api/files/index.js";
+import createHttpError from "http-errors";
 
 const server = Express();
 const port = process.env.PORT;
