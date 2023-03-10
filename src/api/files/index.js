@@ -8,6 +8,7 @@ import {
   asyncPDFGeneration,
   getPDFRedeableStream,
 } from "../../lib/pdf-tools.js";
+import createHttpError from "http-errors";
 
 const filesRouter = Express.Router();
 
