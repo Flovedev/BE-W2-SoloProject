@@ -7,6 +7,7 @@ import {
   notfoundHandler,
 } from "./errorsHandlers.js";
 import mediasRouter from "./api/medias/index.js";
+import filesRouter from "./api/files/index.js";
 
 const server = Express();
 const port = process.env.PORT;
@@ -14,6 +15,7 @@ const port = process.env.PORT;
 server.use(Express.json());
 
 server.use("/medias", mediasRouter);
+server.use("/medias", filesRouter);
 
 server.use(badRequestHandler);
 server.use(unauthorizedHandler);
