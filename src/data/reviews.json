@@ -1,0 +1,17 @@
+[
+  {
+    "_id": "123455",
+    "comment": "A good book but definitely I don't like many parts of the plot",
+    "rate": 3,
+    "elementId": "tt0120737",
+    "createdAt": "2019-08-01T12:46:45.895Z"
+  },
+  {
+    "comment": "Mola mais",
+    "rate": 4,
+    "_id": "16jqhfslf2smpjy",
+    "elementId": "tt0120737",
+    "createdAt": "2023-03-10T17:10:02.205Z",
+    "updatedAt": "2023-03-10T17:11:24.443Z"
+  }
+]

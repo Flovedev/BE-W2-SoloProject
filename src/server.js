@@ -10,6 +10,7 @@ import {
 import mediasRouter from "./api/medias/index.js";
 import filesRouter from "./api/files/index.js";
 import createHttpError from "http-errors";
+import reviewsRouter from "./api/comments/index.js";
 
 const server = Express();
 const port = process.env.PORT;
@@ -37,6 +38,7 @@ server.use(Express.json());
 
 server.use("/medias", mediasRouter);
 server.use("/medias", filesRouter);
+server.use("/medias", reviewsRouter);
 
 server.use(badRequestHandler);
 server.use(unauthorizedHandler);
